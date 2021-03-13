@@ -11,8 +11,8 @@
 		DE54052B25F40FCB00429D87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54052A25F40FCB00429D87 /* SceneDelegate.swift */; };
 		DE54052D25F40FCB00429D87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54052C25F40FCB00429D87 /* ViewController.swift */; };
 		DE54053025F40FCB00429D87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE54052E25F40FCB00429D87 /* Main.storyboard */; };
-		DE54053225F40FCC00429D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE54053125F40FCC00429D87 /* Assets.xcassets */; };
 		DE54053525F40FCC00429D87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE54053325F40FCC00429D87 /* LaunchScreen.storyboard */; };
+		DE54053F25F42CC300429D87 /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54053E25F42CC300429D87 /* CreationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +21,9 @@
 		DE54052A25F40FCB00429D87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DE54052C25F40FCB00429D87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE54052F25F40FCB00429D87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DE54053125F40FCC00429D87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE54053425F40FCC00429D87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE54053625F40FCC00429D87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE54053E25F42CC300429D87 /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +59,8 @@
 				DE54052825F40FCB00429D87 /* AppDelegate.swift */,
 				DE54052A25F40FCB00429D87 /* SceneDelegate.swift */,
 				DE54052C25F40FCB00429D87 /* ViewController.swift */,
+				DE54053E25F42CC300429D87 /* CreationViewController.swift */,
 				DE54052E25F40FCB00429D87 /* Main.storyboard */,
-				DE54053125F40FCC00429D87 /* Assets.xcassets */,
 				DE54053325F40FCC00429D87 /* LaunchScreen.storyboard */,
 				DE54053625F40FCC00429D87 /* Info.plist */,
 			);
@@ -125,7 +125,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE54053525F40FCC00429D87 /* LaunchScreen.storyboard in Resources */,
-				DE54053225F40FCC00429D87 /* Assets.xcassets in Resources */,
 				DE54053025F40FCB00429D87 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +139,7 @@
 				DE54052D25F40FCB00429D87 /* ViewController.swift in Sources */,
 				DE54052925F40FCB00429D87 /* AppDelegate.swift in Sources */,
 				DE54052B25F40FCB00429D87 /* SceneDelegate.swift in Sources */,
+				DE54053F25F42CC300429D87 /* CreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +284,6 @@
 		DE54053A25F40FCC00429D87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Flashcard2/Info.plist;
@@ -302,7 +301,6 @@
 		DE54053B25F40FCC00429D87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Flashcard2/Info.plist;
