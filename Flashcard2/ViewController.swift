@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var backLabel: UILabel!
+    @IBOutlet weak var backlabel: UILabel!
     @IBOutlet weak var frontLabel: UILabel!
     
     override func viewDidLoad() {
@@ -37,4 +37,3 @@ class ViewController: UIViewController {
     }
     
 }
-

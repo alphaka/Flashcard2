@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -40,9 +40,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="7bL-ZU-wVZ" appends="YES" id="dRf-ox-hEr"/>
-                                    <outletCollection property="gestureRecognizers" destination="7bL-ZU-wVZ" appends="YES" id="xnv-Hr-NDf"/>
-                                    <outletCollection property="gestureRecognizers" destination="7bL-ZU-wVZ" appends="YES" id="ElU-T2-spU"/>
+                                    <outletCollection property="gestureRecognizers" destination="7bL-ZU-wVZ" appends="YES" id="uKg-CI-SyG"/>
                                 </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6x-0A-mEZ" userLabel="addButton">
@@ -51,7 +49,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="87"/>
                                 <state key="normal" title="+"/>
                                 <connections>
-                                    <segue destination="tCX-Ey-m5X" kind="presentation" id="wnS-BT-a59"/>
+                                    <segue destination="8Qa-Sm-8Mm" kind="presentation" id="weo-mh-E5V"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -60,18 +58,18 @@
                     </view>
                     <navigationItem key="navigationItem" id="UWR-QD-UeL"/>
                     <connections>
-                        <outlet property="backLabel" destination="gTm-he-BaV" id="L7d-sT-0FT"/>
-                        <outlet property="frontLabel" destination="syb-cI-Woq" id="WuB-BU-FgZ"/>
+                        <outlet property="backlabel" destination="gTm-he-BaV" id="EYO-bu-Ot2"/>
+                        <outlet property="frontLabel" destination="syb-cI-Woq" id="OuS-N3-SLs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="7bL-ZU-wVZ">
                     <connections>
-                        <action selector="didTapOnFlashcard:" destination="BYZ-38-t0r" id="yMh-Vg-LH1"/>
+                        <action selector="didTapOnFlashcard:" destination="BYZ-38-t0r" id="qX0-zh-Ra1"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2145" y="88"/>
+            <point key="canvasLocation" x="2144.927536231884" y="87.723214285714278"/>
         </scene>
         <!--Creation View Controller-->
         <scene sceneID="StD-tM-Ale">
@@ -106,9 +104,9 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="43h-nb-O67">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Kgm-aU-ZAR" userLabel="Cancel">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Gpd-rA-uMT" userLabel="Cancel">
                             <connections>
-                                <action selector="didTapOnCancel:" destination="pQx-Lx-FMK" id="RTT-Cu-I8M"/>
+                                <action selector="didTapOnCancel:" destination="pQx-Lx-FMK" id="iVf-TL-MuF"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Done" id="ExN-Hd-3aB" userLabel="Done">
@@ -125,25 +123,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X6T-up-erc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3903" y="88"/>
+            <point key="canvasLocation" x="3719" y="88"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="Mas-HW-icc">
+        <scene sceneID="YV0-SW-ldM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tCX-Ey-m5X" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Qa-Sm-8Mm" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yiu-wp-96o">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nkE-VM-Zyl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="pQx-Lx-FMK" kind="relationship" relationship="rootViewController" id="31X-ve-RZf"/>
+                        <segue destination="pQx-Lx-FMK" kind="relationship" relationship="rootViewController" id="9Wi-sw-oqd"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vzI-D2-dGe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8L3-VA-8Lp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3039" y="88"/>
+            <point key="canvasLocation" x="2980" y="88"/>
         </scene>
     </scenes>
     <resources>
