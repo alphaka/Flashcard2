@@ -1,7 +1,7 @@
 ## Flashcard App
 
 ### App Description
-`TODO://`The purpose of this program is the create an app that lips the page
+`TODO:`The purpose of this program is the create an app that lips the page
 when tap on.
 
 ### App Walk-through
