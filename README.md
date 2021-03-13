@@ -1,13 +1,14 @@
 ## Flashcard App
 
 ### App Description
-`TODO:`The purpose of this program is the create an app that lips the page
-when tap on.
+`TODO:`The purpose of this program is the create an app that allows the user to create his set own of
+questions through a new page.
 
 ### App Walk-through
 
 Please find below the gif of the app
 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/63592880/111017807-7a418200-8383-11eb-878e-38bf837189e1.gif)
 
 
 
