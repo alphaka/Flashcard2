@@ -9,7 +9,9 @@ the user create his own set of questions and store them in the flashcards.
 
 Please find below the gif of the app
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/63592880/111036764-e0afba00-83ee-11eb-88a2-e028d55ba58b.gif)
+
+![Lab3](https://user-images.githubusercontent.com/63592880/111852168-600c2480-88ec-11eb-9235-2ebf1abc177b.gif)
+
 
 
 ## Required User Stories
