@@ -43,13 +43,31 @@
                                     <outletCollection property="gestureRecognizers" destination="7bL-ZU-wVZ" appends="YES" id="uKg-CI-SyG"/>
                                 </connections>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6x-0A-mEZ" userLabel="addButton">
-                                <rect key="frame" x="162" y="678" width="91" height="67"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0D-Ai-D1W" userLabel="Next">
+                                <rect key="frame" x="293" y="717" width="101" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="87"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="didTapOnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIC-va-B4A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6x-0A-mEZ" userLabel="addButton">
+                                <rect key="frame" x="162" y="729" width="91" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                 <state key="normal" title="+"/>
                                 <connections>
                                     <segue destination="8Qa-Sm-8Mm" kind="presentation" id="weo-mh-E5V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjG-hk-G5N" userLabel="Prev.">
+                                <rect key="frame" x="20" y="750" width="101" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Prev"/>
+                                <connections>
+                                    <action selector="didTapOnPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XGM-IF-7EM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,8 +76,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="UWR-QD-UeL"/>
                     <connections>
-                        <outlet property="backlabel" destination="gTm-he-BaV" id="EYO-bu-Ot2"/>
+                        <outlet property="backLabel" destination="gTm-he-BaV" id="EYO-bu-Ot2"/>
                         <outlet property="frontLabel" destination="syb-cI-Woq" id="OuS-N3-SLs"/>
+                        <outlet property="nextButton" destination="g0D-Ai-D1W" id="YRR-BG-2uy"/>
+                        <outlet property="prevButton" destination="FjG-hk-G5N" id="fRP-Gm-N7E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -69,7 +89,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2144.927536231884" y="87.723214285714278"/>
+            <point key="canvasLocation" x="2143.4782608695655" y="87.723214285714278"/>
         </scene>
         <!--Creation View Controller-->
         <scene sceneID="StD-tM-Ale">
@@ -83,16 +103,16 @@
                                 <rect key="frame" x="20" y="134" width="374" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="   Question" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="rpa-kq-Ba7" userLabel="Question">
-                                        <rect key="frame" x="4" y="17" width="366" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="   Answer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xBm-r2-T87" userLabel="Answer">
                                         <rect key="frame" x="4" y="85" width="366" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="   Question" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="rpa-kq-Ba7" userLabel="Question">
+                                        <rect key="frame" x="4" y="23" width="366" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>

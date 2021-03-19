@@ -27,11 +27,12 @@ class CreationViewController: UIViewController {
         // Get the text from the answer text field
         let answerText = answer.text
         
-        // Call the function to update the flashcard
-        flashcardsController.updateFlashcard(question: questionText!, answer: answerText!)
         if (questionText == nil || answerText == nil || questionText!.isEmpty || answerText!.isEmpty) {
             showAlert()
         } else {
+            // Call the function to update the flashcard
+            flashcardsController.updateFlashcard(question: questionText!, answer: answerText!)
+            
             //Dismiss
             dismiss(animated: true)
         }
