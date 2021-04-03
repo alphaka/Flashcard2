@@ -10,7 +10,7 @@ the user create his own set of questions and store them in the flashcards.
 Please find below the gif of the app
 
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/63592880/113465469-3382fd00-9402-11eb-86ff-b89afee0bb59.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/63592880/113482909-c6598100-946e-11eb-861f-1ec8dc6373ec.gif)
 
 
 
@@ -28,3 +28,4 @@ Please find below the gif of the app
 - [x] App displays a new icon and splash logo when loading.
 - [x] Cutomized next, prev, and add buttons.
 - [x] User notices animations when the flashcard is sliding forward and backward.
+- [x] User sees a flip animation when revealing the answer.
