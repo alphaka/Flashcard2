@@ -27,4 +27,4 @@ Please find below the gif of the app
 - [x] User can save flashcards and retrieve them when the app is reloaded.
 - [x] App displays a new icon and splash logo when loading.
 - [x] Cutomized next, prev, and add buttons.
-- [x] User notices animations when the flashcard is sliding forward or backward.
+- [x] User notices animations when the flashcard is sliding forward and backward.
