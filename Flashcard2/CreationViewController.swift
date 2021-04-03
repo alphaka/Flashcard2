@@ -13,11 +13,15 @@ class CreationViewController: UIViewController {
     
     @IBOutlet weak var question: UITextField!
     @IBOutlet weak var answer: UITextField!
+    var initialQuestion: String?
+    var initialAnswer: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        question.text = initialQuestion
+        answer.text = initialAnswer
     }
 
     @IBAction func didTapOnDone(_ sender: Any) {
@@ -30,6 +34,7 @@ class CreationViewController: UIViewController {
         if (questionText == nil || answerText == nil || questionText!.isEmpty || answerText!.isEmpty) {
             showAlert()
         } else {
+            
             // Call the function to update the flashcard
             flashcardsController.updateFlashcard(question: questionText!, answer: answerText!)
             
